@@ -3,6 +3,7 @@ import 'package:tap_bar_flutter/AwesomeDialog.dart';
 import 'package:tap_bar_flutter/BottomNavigationBar.dart';
 import 'package:tap_bar_flutter/BottomSheet.dart';
 import 'package:tap_bar_flutter/DateTime.dart';
+import 'package:tap_bar_flutter/InternalStorage.dart';
 import 'package:tap_bar_flutter/Navigator.dart';
 import 'package:tap_bar_flutter/PageView.dart';
 import 'package:tap_bar_flutter/Scroll.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     MaterialApp app = MaterialApp(
-      home: DateTime1(),
+      home: InternalStorage(),
       debugShowCheckedModeBanner: false,
       routes: {
         "TapBar": (context) => TapBar(),
