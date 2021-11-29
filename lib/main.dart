@@ -10,6 +10,7 @@ import 'package:tap_bar_flutter/Scroll.dart';
 import 'package:tap_bar_flutter/Slider1.dart';
 import 'package:tap_bar_flutter/TapBar.dart';
 import 'package:tap_bar_flutter/TapBarNoAppBar.dart';
+import 'package:tap_bar_flutter/peromission.dart';
 import 'package:tap_bar_flutter/searchDelegate.dart';
 
 import 'DropDownSearch1.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     MaterialApp app = MaterialApp(
-      home: InternalStorage(),
+      home: peromission(),
       debugShowCheckedModeBanner: false,
       routes: {
         "TapBar": (context) => TapBar(),
