@@ -27,6 +27,7 @@ class peromissionState extends State<peromission> {
 
   @override
   void initState() {
+
     peromissions();
     super.initState();
   }

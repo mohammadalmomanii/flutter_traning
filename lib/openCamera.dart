@@ -14,6 +14,7 @@ class openCamera extends StatefulWidget {
 
 class openCameraState extends State<openCamera> {
   File? myImage = null;
+  var x=4;
   getCamera() async {
     var picked = await ImagePicker().pickImage(source: ImageSource.camera);
     if (picked != null)
@@ -49,7 +50,7 @@ class openCameraState extends State<openCamera> {
                         myImage!,
                         fit: BoxFit.fill,
                       )
-                    : Text("no image"),
+                    : Text("no image $x"),
                 ElevatedButton(
                   child: Text("showDialog"),
                   onPressed: () {
